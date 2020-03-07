@@ -8,6 +8,7 @@
 ## How to run:
 * `python3 -i main.py` : It will print the summary of result and saves it in `log.json` file.
 * Note: Running for first time will take 2-4 minutes. Most of this time is taken for preprocessing comments which is currently being done in a python loop which can be hugely optimized. Subsequent runs will take less time since it uses the previously saved preprocessed comments.
+* Model based on unique features can be run by pasting the code from `interact.py` in the python shell which will come after running `python3 -i main.py`.
 
 ## Requirements:
 * sklearn
