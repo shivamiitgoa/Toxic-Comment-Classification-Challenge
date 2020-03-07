@@ -6,5 +6,11 @@
 * [Dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)
 
 ## How to run:
-* `python3 -i main.py`
+* `python3 -i main.py` : It will print the summary of result and saves it in `log.json` file.
 
+## Requirements:
+* sklearn
+* nltk
+* numpy 
+* pandas 
+* To install dependencies, run `python3 -m pip install numpy pandas sklearn nltk`

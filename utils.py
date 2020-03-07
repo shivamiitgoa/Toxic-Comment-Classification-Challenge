@@ -24,15 +24,19 @@ def commentPreprocessor(comment):
     return " ".join(stemmed_comment_words)
 
 
-# Prints the given message along with the current time
 def log(message):
+    '''
+    Prints the given message along with the current time
+    '''
     now = datetime.now()
     time_string = now.strftime("%H:%M:%S:%f")
     print("%s: %s" % (time_string, message))
 
 
 def create_model_and_evaluate(XTrainArg, Y_train, XTestArg, Y_test, model, debug=False):
-    #----------------------------------- Creating model --------------------------------------
+    '''
+    Trains the given model, tests it and return its score.
+    '''
     if debug: log("Training model...")
     lr_model = model.fit(XTrainArg, Y_train)
     if debug: log("Making predictions...")

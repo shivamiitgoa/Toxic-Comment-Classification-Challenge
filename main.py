@@ -123,6 +123,6 @@ for model_name in models:
     except Exception as e:
         print(e)
 
-
+#---------------------------------- Saving result file ---------------------------------------------
 json.dump(global_results, open('log.json', 'w'), indent=4)
 
